@@ -1,0 +1,138 @@
+Welcome to Node.js v18.19.0.
+Type ".help" for more information.
+> let a = 5;
+undefined
+> let b = 10
+undefined
+> console.log("Antes del intercambio");
+Antes del intercambio
+undefined
+> console.log("a", a);
+a 5
+undefined
+> console.log("b", b);
+b 10
+undefined
+> 
+> //////////////////////
+undefined
+> let aux= a;
+undefined
+> a = b;
+10
+> b = aux;
+5
+> 
+> console.log("Despues del intercambio.");
+Despues del intercambio.
+undefined
+> console.log("a", a);
+a 10
+undefined
+> console.log("b", b);
+b 5
+undefined
+
+
+---------------------------2-------------------------
+> let contador = 0;
+undefined
+> for(let i = 0; i < 5; i++){
+... contador++;
+... console.log("iteracion numero: " + contador); 
+... }
+iteracion numero: 1
+iteracion numero: 2
+iteracion numero: 3
+iteracion numero: 4
+iteracion numero: 5
+undefined
+
+------------------------------------3--------------------
+
+> fuction esPar(centinela){
+fuction esPar(centinela){
+        ^^^^^
+
+Uncaught SyntaxError: Unexpected identifier
+> function esPar(centinela){
+... let esPar = false;
+... if (centinela%2 === 0) {
+... esPar = true;
+... }
+... return esPar;
+... }
+undefined
+> console.log(esPar(4));
+true
+undefined
+> console.log(esPar(5));
+false
+undefined
+----------------------------------4----------------------
+let centinela;
+undefined
+> let bandera = true;
+undefined
+function obtenerNumero(){
+... return parseInt(prompt("Ingrese un numero (ingrese 0 para salir): "));
+... }
+undefined
+> while(bandera){
+... centinela = obtenerNumero;
+... if(centinela === 0){
+... bandera = false;
+... console.log("sale del programa");
+... } else{
+... console.log("numero ingresado: ", centinela);
+... }
+... }
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+numero ingresado:  [Function: obtenerNumero]
+-----------------5---------------
+> var num;
+undefined
+> console.log(num);
+undefined
+undefined
+> var val1=1;
+undefined
+> var val2=5;
+undefined
+> console.log(val1,val2);
+1 5
+undefined
+> const _pi=3.14151617;
+undefined
+> console.log(_pi);
+3.14151617
+undefined
+> 
+
+

@@ -1,0 +1,243 @@
+operadores logicos
+=: se utiliza para asignar un valor a una variable
+==: se utiliza para comparar dos valores y determinar si son iguales. 
+===:se utiliza para verifica si dos valores son idénticos, tanto en valor como en tipo de dato.
+<: se utiliza comúnmente para verificar si un valor es menor que otro.
+< =: se utiliza comúnmente para verificar si un valor es menor o igual que otro.
+>: se utiliza comúnmente para verificar si un valor es mayor que otro.
+> =: se utiliza comúnmente para verificar si un valor es mayor o igual que otro.
+!= o < >: se utiliza para verificar que un valor sea desigual a otro.
+
+Conectores logicos
+^,&&,and,Y: se utiliza para combinar dos expresiones lógicas.
+v,||, or, O: se utiliza para combinar dos expresiones lógicas.
+¬, ~, !, not, Nand/nor: se utiliza como el operador de negación lógica.
+
+-------------------------------------------------------------------------------------
+/*Tener en cuenta que estoy trabajando desde una maquina de linux*/
+
+EJERCICIO 1
+
+//creamos el arhivo .js
+nano SISimple.js
+
+//escribimos el codigo
+let nldpersona=2045;
+if (nldpersona>=18){
+console.log("¡¡Acceso Concedido!!");
+}
+
+//guardamos con ctrl+O
+//ejecutamos el codigo 
+node SISimple.js 
+
+//resultado
+¡¡Acceso Concedido!!
+
+EJERCICIO 2
+
+//creamos el arhivo .js
+nano SICompuesta.js
+
+//escribimos el codigo
+let cGenero='f';
+let nEdad=20;
+if(cGenero = 'f' && nEdad >= 18) {
+console.log("eres mujer y mayor de edad");
+} else{
+console.log("eres Masulino y menor de edad");
+}
+
+
+//guardamos con ctrl+O
+//ejecutamos el codigo 
+node SISimple.js 
+
+//respuesta
+eres mujer y mayor de edad
+
+
+ejercicio 3
+
+//creamos el arhivo .js
+nano SiAnidada.js
+
+//escribimos el codigo
+let sColor="BLANCO";
+sColor=sColor.toLowerCase();
+
+if(sColor === "blanco" || sColor === "naranja" || sColor === "amarillo" ||
+sColor === "gris" || scolor === "negro"){
+if(sColor === "blanco"){
+console.log("Mañana");
+}else if(sColor === "naranja"){
+console.log("Medio dia");
+}else if(sColor === "amarillo"){
+console.log("Tarde");
+}else if(sColor === "gris"){
+console.log("Vespertina");
+}else if(sColor === "negro"){
+console.log("Noche");
+}
+}else{
+console.log("no existe esa jornada");
+}
+
+
+//guardamos con ctrl+O
+//ejecutamos el codigo 
+node SiAnidada.js 
+
+//respuesta
+Mañana
+-------------------------------------------------------------------------------------
+Los operadores condicionales ternarios son una forma concisa de expresar una evaluación condicional en muchos lenguajes de programación. Son llamados "ternarios" porque toman tres operandos: una condición, una expresión que se evalúa si la condición es verdadera, y una expresión que se evalúa si la condición es falsa.
+
+condición ? expresión_verdadera : expresión_falsa
+-------------------------------------------------------------------------------------
+ejercicio 4
+
+//creamos el arhivo .js
+nano SiHorizonta.js
+
+//escribimos el codigo
+let x=10;
+let alerta = (x>5) ? "x es mayor que 5" : "x es menor o igual que 5";
+console.log(alerta);
+
+//guardamos con ctrl+O
+//ejecutamos el codigo 
+node SiHorizontada.js 
+
+//respuesta
+x es mayor que 5
+
+EJERCICIO SWITCH	
+
+//creamos el arhivo .js
+nano switch.js
+
+//escribimos el codigo
+let sColor ="BLANCO";
+sColor=sColor.toLowerCase();
+
+switch(sColor){
+case"blanco":
+console.log("Esta es la respuesta");
+break;
+case"Blanco":
+console.log("Esta no es la respuesta");
+break;
+case"BLANCO":
+console.log("Mañana");
+break;
+case"naranja":
+case"Naranja":
+case"NARANJA":
+console.log("1/2 Dia");
+break;
+case"amarillo":
+case"Amarillo":
+case"AMARILLO":
+console.log("TARDE");
+break;
+case"gris":
+case"Gris":
+case"GRIS":
+console.log("Vespertina");
+break;
+case"negro":
+case"Negro":
+case"NEGRO":
+console.log("NOCHE");
+break;
+default:
+console.log("No eciste esa jornada");
+}
+//guardamos con ctrl+O
+//ejecutamos el codigo 
+node switch.js 
+
+//respuesta
+Esta es la respuesta
+-------------------------------------------------------------------------------------
+
+BUCLES
+
+//creamos el arhivo .js
+nano bucles.js
+
+//escribimos el codigo
+console.log("bucle for");
+for(let i = 0;i < 5;i++){
+console.log(i);
+}
+
+console.log("bucle while");
+let j =0;
+while(j<5){
+console.log(j);
+j++;
+}
+
+console.log("bucle do while");
+let k =0;
+do{
+console.log(k);
+k++;
+}while(k<5);
+
+//guardamos con ctrl+O
+//ejecutamos el codigo 
+node bucles.js
+
+//respuesta
+bucle for
+0
+1
+2
+3
+4
+bucle while
+0
+1
+2
+3
+4
+bucle do while
+0
+1
+2
+3
+4
+
+-------------------------------------------------------------------------------------
+
+SALTOS
+//creamos el arhivo .js
+nano saltos.js
+
+//escribimos el codigo
+for(let i=0;i<10;i++){
+if(i===5){
+break;
+}
+console.log(i);
+}
+
+
+console.log("uso de continue");
+
+for(let i=0;i<10;i++){
+if(i===2){
+continue;
+}
+console.log(i);
+}
+
+//guardamos con ctrl+O
+//ejecutamos el codigo 
+node saltos.js
+
+//respuesta
+
